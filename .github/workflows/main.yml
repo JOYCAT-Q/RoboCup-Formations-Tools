@@ -16,4 +16,4 @@ jobs:
           python_ver: '3.10'
           spec: 'formations_fixed.py'
           upload_exe_with_name: 'formations_fixed'
-          options: --onefile, --name "Formations_fixed_Tools"
+          options: --onefile, --name "Formations_fixed_Tools", --windowed
