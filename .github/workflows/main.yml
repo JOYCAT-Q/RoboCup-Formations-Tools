@@ -1,0 +1,19 @@
+name: Formations_fixed_Tools
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pyinstaller-build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Create Executable
+        uses: sayyid5416/pyinstaller@v1
+        with:
+          python_ver: '3.10'
+          spec: 'formations_fixed.py'
+          upload_exe_with_name: 'formations_fixed'
+          options: --onefile, --name "Formations_fixed_Tools"
