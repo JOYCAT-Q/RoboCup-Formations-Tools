@@ -10,7 +10,7 @@ jobs:
   pyinstaller-build:  
     runs-on: ubuntu-latest  
     steps:  
-      - name: Create Executable  
+      - name: Build App  
         uses: sayyid5416/pyinstaller@v1  
         with:  
           python_ver: '3.10'  
